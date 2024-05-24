@@ -7,6 +7,8 @@
 
  Nota: sus valores si son modificables
 
+ La lista es una colección ordenada y modificable. Permite miembros duplicados.
+
 
 """
 
@@ -35,7 +37,7 @@
 #     print(f"la palabra {palabra} NO se encuentra en la lista") 
 
 
-#Añadir elementos a la lista
+#Ejemplo 3 Añadir elementos a la lista
 
 # numeros=[23,45,56,78]
 # for i in numeros:
@@ -47,24 +49,27 @@
 # for i in numeros:
 #     print(i)
 
-peliculas=["Batman"]
-print(peliculas)
-opcion="SI"
-while opcion=="SI":
-   pelicula=input("Introduce la pelicula: ")
-   peliculas.append(pelicula)
-   opcion=input("¿Deseas introducir otra pelicula (SI/NO)? ")
-   opcion=opcion.upper()
+#Ejemplo 4 Crear una lista con nombres de peliculas agregar y remover elementos de la listas
+# peliculas=["Batman"]
+# print(peliculas)
+# opcion="SI"
+# while opcion=="SI":
+#    pelicula=input("Introduce la pelicula: ")
+#    peliculas.append(pelicula)
+#    opcion=input("¿Deseas introducir otra pelicula (SI/NO)? ")
+#    opcion=opcion.upper()
 
-print(peliculas)
+# print(peliculas)
 
-#Quitar una pelicula
+# #Quitar una pelicula
 
-peliculas.remove("Batman")
-print(peliculas)
-peliculas.pop(2)
-print(peliculas)
+# peliculas.remove("Batman")
+# print(peliculas)
+# peliculas.pop(2)
+# print(peliculas)
 
+# for i in peliculas:
+#    print(f"{peliculas.index(i)}: {i}")
 
 
 #Recorrer una lista 
@@ -76,3 +81,26 @@ print(peliculas)
 # while i<len(numeros):
 #     print(f"{i}: {numeros[i]}")
 #     i+=1
+
+
+#Ejemplo 4 Crear una multidimensional
+
+#Crear una lista para almacenar los contactos telefonicos
+
+agenda=[
+   [
+      "Carlos",
+      6181234567
+   ],
+   [
+      "Alberto",
+      6181234568
+   ],
+   [
+      "Martin",
+      6181234569
+   ],
+]
+
+for i in agenda:
+   print(f"{agenda.index(i)}{i}")
