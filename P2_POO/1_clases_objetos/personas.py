@@ -9,9 +9,19 @@ class Persona:
 
 #Herencia La clase Estudiante hereda de la clase Persona
 class Estudiante(Persona):
-    def __init__(self, nombre, edad, carrera):
+    def __init__(self, nombre, edad, carrera,matricula):
         super().__init__(nombre, edad)
         self.carrera = carrera
+        self.matricula=matricula
+    
+    def informar_carrera(self):
+        print(f"Soy {self.nombre} y estudio la carrera de {self.carrera}.")
+
+class Docente(Persona):
+    def __init__(self, nombre, edad, carrera,num_empleado):
+        super().__init__(nombre, edad)
+        self.carrera = carrera
+        self.num_empleado=num_empleado
     
     def informar_carrera(self):
         print(f"Soy {self.nombre} y estudio la carrera de {self.carrera}.")
